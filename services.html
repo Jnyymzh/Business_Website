@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCTIC BREEZE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<style>
+    .hero {
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+         url("img/hero.jpg");
+    color: white;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .offer, .pages {
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    color: white;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .offer{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url("img/offer-bg.jpg");
+    }
+
+    .pages {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url("img/pages-bg.jpeg");
+    }
+
+</style>
+
+<body class="bg-gray-50">
+    
+
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="img/logo.png" class="h-8" alt="Flowbite Logo">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Arctic Breeze</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a href="contact.html">Get started</a></button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+            <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+            </li>
+            <li>
+            <a href="about.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+            <a href="services.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            </li>
+            <li>
+            <a href="faq.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FAQ's</a>
+            </li>
+            <li>
+            <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="pages py-20 bg-cover">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-blue-600 md:text-5xl lg:text-6xl dark:text-white">SERVICES</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-white">Providing top-notch AC solutions, from installation and maintenance to repairs. Stay cool and comfortable with our expert care.</p>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="py-16 mt-9 w-full text-center">
+        <h2 class="text-3xl font-bold text-blue-700">Why Choose Our Air Conditioners?</h2>
+        <p class="mt-2 text-gray-600 max-w-2xl mx-auto">Enjoy superior cooling, energy efficiency, and modern design with our latest air conditioning models.</p>
+        
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-4/5 mx-auto">
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://www.air-con.com.sg/wp-content/uploads/2024/11/Energy-Efficient-Inverter-Air-Conditioner-in-Eco-Friendly-Setting.webp" alt="Energy Efficient" class="w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mt-4">Energy Efficient</h3>
+                <p class="text-gray-600 text-sm p-2">Save on electricity bills with eco-friendly technology.</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://aihome.com.my/wp-content/uploads/2023/05/Smart-AC-Controller-1.jpg" alt="Smart Control" class="w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mt-4">Smart Control</h3>
+                <p class="text-gray-600 text-sm p-2">Control temperature from your smartphone anytime.</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://eletriclife.com/cdn/shop/files/Eletriclife18000BTU2Zone20SEER2MiniSplitACwithHeatPump_10_800x.jpg?v=1725674729" alt="Ultra Quiet" class="w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mt-4">Ultra Quiet</h3>
+                <p class="text-gray-600 text-sm p-2">Enjoy peaceful cooling with whisper-quiet operation.</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://eletriclife.com/cdn/shop/files/Eletriclife18000BTU2Zone20SEER2MiniSplitACwithHeatPump_1_800x.jpg?v=1725674729" alt="Sleek Design" class="w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mt-4">Sleek Design</h3>
+                <p class="text-gray-600 text-sm p-2">Modern and stylish to complement your home decor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container bg-[#E5E7EB] mx-auto w-full px-6 py-12 flex items-center justify-center">
+        <div class="max-w-6xl">
+                <!-- First Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+                <!-- Image Column -->
+                <div>
+                    <img src="https://i.pinimg.com/736x/40/50/7b/40507bdee7c454ef40f3cd4bfe490b85.jpg" alt="Air Conditioning" class="w-full rounded-lg shadow-lg">
+                </div>
+                <!-- Info Column -->
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-700">Premium Air Conditioning Services</h2>
+                    <p class="text-gray-600 mt-4">
+                        We provide top-quality air conditioning installation, maintenance, and repair services. 
+                        Our certified professionals ensure a cool and comfortable environment with energy-efficient solutions.
+                    </p>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-center">
+                            ✅ 24/7 Emergency Support
+                        </li>
+                        <li class="flex items-center">
+                            ✅ Energy-Efficient Solutions
+                        </li>
+                        <li class="flex items-center">
+                            ✅ Affordable Pricing & Financing Options
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-block mt-6 bg-blue-700 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Second Row (Cards) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://i.pinimg.com/736x/20/a2/08/20a2080d8f065605b2f2e62ad5b39613.jpg" alt="Installation" class="w-full h-64">
+                    <h3 class="text-xl font-semibold mt-4">Installation</h3>
+                    <p class="text-gray-600 mt-2 p-2">Professional AC installation for homes and businesses.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://i.pinimg.com/736x/58/21/40/582140811bc8b1cd1a076696dc5a0ae2.jpg" alt="Maintenance" class="w-full h-64">
+                    <h3 class="text-xl font-semibold mt-4">Maintenance</h3>
+                    <p class="text-gray-600 mt-2 p-2">Regular AC check-ups to ensure efficiency and longevity.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://i.pinimg.com/736x/48/fc/fd/48fcfd4edb672963d39ab93cf24b3c34.jpg" alt="Repairs" class="w-full h-64">
+                    <h3 class="text-xl font-semibold mt-4">Repairs</h3>
+                    <p class="text-gray-600 mt-2 p-2">Quick and reliable AC repairs to keep you cool.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://i.pinimg.com/736x/46/3d/4f/463d4f3564da04f8523371171453c49c.jpg" alt="Energy Efficiency" class="w-full h-64">
+                    <h3 class="text-xl font-semibold mt-4">Duct Cleaning</h3>
+                    <p class="text-gray-600 mt-2 p-2">Ensuring efficient airflow and reducing allergens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--PRICING-->
+    <section class="text-center py-10">
+        <h2 class="text-3xl font-bold text-blue-700">Choose Your Plan</h2>
+        <p class="text-gray-500 mt-2">No contracts, no surprise fees.</p>
+
+        <!-- Toggle Button -->
+        <div class="mt-6 flex justify-center">
+            <div class="bg-gray-200 p-1 rounded-full flex">
+                <button id="monthlyBtn" class="px-6 py-2 text-sm font-semibold bg-blue-600 text-white rounded-full">Monthly</button>
+                <button id="yearlyBtn" class="px-6 py-2 text-sm font-semibold text-gray-700">Yearly</button>
+            </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+
+            <!-- Lite Plan -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-300">
+                <h2 class="text-2xl font-bold text-gray-800">Lite</h2>
+                <p class="text-gray-500 mt-2">For small teams or individuals</p>
+                <p class="text-4xl font-bold text-gray-900 mt-4" id="litePrice">$29</p>
+                <p class="text-sm text-gray-500">/ Month</p>
+                <ul class="mt-4 text-gray-600">
+                    <li>✅ Unlimited sending</li>
+                    <li>✅ Email marketing</li>
+                    <li>✅ Send newsletters</li>
+                    <li>✅ Up to 5 users</li>
+                </ul>
+                <button class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Choose Plan</button>
+            </div>
+
+            <!-- Plus Plan (Highlighted) -->
+            <div class="bg-blue-600 text-white p-6 rounded-lg shadow-lg text-center transform scale-105">
+                <h2 class="text-2xl font-bold">Plus</h2>
+                <p class="mt-2 text-gray-200">Best for growing businesses</p>
+                <p class="text-4xl font-bold mt-4" id="plusPrice">$89</p>
+                <p class="text-sm">/ Month</p>
+                <ul class="mt-4">
+                    <li>✅ Unlimited sending</li>
+                    <li>✅ Email marketing</li>
+                    <li>✅ Send newsletters</li>
+                    <li>✅ Up to 25 users</li>
+                </ul>
+                <button class="mt-6 bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-gray-100">Choose Plan</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-300">
+                <h2 class="text-2xl font-bold text-gray-800">Enterprise</h2>
+                <p class="text-gray-500 mt-2">For large organizations</p>
+                <p class="text-4xl font-bold text-gray-900 mt-4" id="enterprisePrice">$159</p>
+                <p class="text-sm text-gray-500">/ Month</p>
+                <ul class="mt-4 text-gray-600">
+                    <li>✅ Unlimited sending</li>
+                    <li>✅ Email marketing</li>
+                    <li>✅ Send newsletters</li>
+                    <li>✅ Up to 50 users</li>
+                </ul>
+                <button class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Choose Plan</button>
+            </div>
+
+        </div>
+        <script>
+            const monthlyBtn = document.getElementById("monthlyBtn");
+            const yearlyBtn = document.getElementById("yearlyBtn");
+
+            // Function to update prices and styles
+            function updatePricing(isMonthly) {
+                const monthlyPrices = { lite: 29, plus: 89, enterprise: 159 };
+                const yearlyPrices = { lite: 290, plus: 890, enterprise: 1590 };
+
+                document.getElementById("litePrice").textContent = `$${isMonthly ? monthlyPrices.lite : yearlyPrices.lite}`;
+                document.getElementById("plusPrice").textContent = `$${isMonthly ? monthlyPrices.plus : yearlyPrices.plus}`;
+                document.getElementById("enterprisePrice").textContent = `$${isMonthly ? monthlyPrices.enterprise : yearlyPrices.enterprise}`;
+
+                // Toggle button styles
+                if (isMonthly) {
+                    monthlyBtn.classList.add("bg-blue-600", "text-white");
+                    monthlyBtn.classList.remove("text-gray-700", "bg-gray-200");
+                    
+                    yearlyBtn.classList.add("text-gray-700", "bg-gray-200");
+                    yearlyBtn.classList.remove("bg-blue-600", "text-white");
+                } else {
+                    yearlyBtn.classList.add("bg-blue-600", "text-white", "rounded-full");
+                    yearlyBtn.classList.remove("text-gray-700", "bg-gray-200");
+                    
+                    monthlyBtn.classList.add("text-gray-700", "bg-gray-200");
+                    monthlyBtn.classList.remove("bg-blue-600", "text-white");
+                }
+            }
+
+            // Event Listeners
+            monthlyBtn.addEventListener("click", () => updatePricing(true));
+            yearlyBtn.addEventListener("click", () => updatePricing(false));
+
+            // Set default to Monthly
+            updatePricing(true);
+
+        </script>
+    </section>
+    
+    <!--Offer Section-->
+    <section class="offer text-center p-20">
+        <div class="container max-w-6xl px-6 flex flex-col md:flex-row justify-between items-center relative z-10">
+            <!-- Left Content -->
+            <div class="text-white md:w-1/2 w-full text-center md:text-left mb-6 md:mb-0">
+                <h2 class="text-4xl font-bold">24/7 SERVICES</h2>
+                <p class="text-lg text-blue-300 mt-3">
+                    We offer professional air conditioning services, including installation, maintenance, repair, and replacement. Contact us anytime!
+                </p>
+                <p class="text-2xl font-semibold mt-4">+1 234 567 890</p>
+            </div>
+    
+            <!-- Right Offer Box -->
+            <div class="bg-blue-700 text-white p-6 rounded-lg md:w-1/3 w-full shadow-lg text-center">
+                <h3 class="text-3xl font-bold">Best Offer!</h3>
+                <p class="mt-2 text-lg">Sunday Deal <span class="font-bold">50% Off</span><sup class="text-xs">UPTO</sup></p>
+                <p class="text-sm mt-1">*Installation, maintenance, repair, and AC replacement.</p>
+                <button class="mt-4 bg-white text-blue-600 font-bold py-2 px-4 rounded-lg hover:bg-gray-100">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!--Testimonial Section-->
+    <section class="text-center py-20">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-700">Testimonials</h2>
+            <p class="text-gray-600 mt-2">See what our customers say about our AC services.</p>
+        </div>
+        
+        <div class="flex flex-wrap justify-center mt-12 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 w-80 text-center">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Customer" class="w-20 h-20 mx-auto rounded-full border-4 border-gray-300 -mt-12">
+                <p class="mt-4 text-gray-600">"The AC installation was quick and professional. My home stays cool even on the hottest days!"</p>
+                <h4 class="mt-4 text-blue-700 font-bold">John Doe</h4>
+                <p class="text-gray-500 text-sm">Homeowner</p>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 w-80 text-center">
+                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="Customer" class="w-20 h-20 mx-auto rounded-full border-4 border-gray-300 -mt-12">
+                <p class="mt-4 text-gray-600">"Excellent service! The technicians were knowledgeable and fixed my AC in no time."</p>
+                <h4 class="mt-4 text-blue-700 font-bold">Jane Smith</h4>
+                <p class="text-gray-500 text-sm">Business Owner</p>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 w-80 text-center">
+                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="Customer" class="w-20 h-20 mx-auto rounded-full border-4 border-gray-300 -mt-12">
+                <p class="mt-4 text-gray-600">"Their maintenance plan keeps my AC running smoothly year-round. Highly recommended!"</p>
+                <h4 class="mt-4 text-blue-700 font-bold">Michael Brown</h4>
+                <p class="text-gray-500 text-sm">Property Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-[#E5E7EB]">
+        <!-- Contact Section -->
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 py-16">
+            <!-- Text Column -->
+            <div class="pl-16">
+                <p class="text-blue-600">HEARD</p>
+                <p class="text-blue-600">ENOUGH? →</p>
+            </div>
+            
+            <!-- Heading Column -->
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-blue-700">Contact us</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-2"></div>
+            </div>
+            
+            <!-- Arrow Link Column -->
+            <div class="text-center">
+                <a href="contact.html" class="text-blue-700 text-2xl"><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        
+        <!-- Contact Details -->
+        <div class="bg-blue-700 text-white py-12">
+            <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-lg font-bold">Your Trusted AC Experts</h3>
+                    <p class="mt-2">Keeping your home and office cool, no matter the season.</p>
+                </div>
+                
+                <!-- Location 1 -->
+                <div>
+                    <h4 class="font-bold">NEW YORK</h4>
+                    <p>contact@coolingexperts.com</p>
+                    <p>+1 212-555-7890</p>
+                    <p>123 Cooling St, Manhattan, NY 10001</p>
+                    <a href="#" class="text-[#A0E4F1] underline">SEE ON MAP →</a>
+                </div>
+                
+                <!-- Location 2 -->
+                <div>
+                    <h4 class="font-bold">LOS ANGELES</h4>
+                    <p>la@coolingexperts.com</p>
+                    <p>+1 310-555-1234</p>
+                    <p>456 Breeze Ave, Los Angeles, CA 90012</p>
+                    <a href="#" class="text-[#A0E4F1] underline">SEE ON MAP →</a>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="max-w-6xl mx-auto px-6 mt-10 text-center text-sm">
+                <h4 class="font-bold">WANT TO STAY COOL YEAR-ROUND?</h4>
+                <a href="#" class="text-[#A0E4F1] underline">SIGN UP FOR OUR MAINTENANCE PLAN →</a>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="max-w-6xl mx-auto px-6 mt-8 flex justify-center space-x-6">
+                <a href="#" class="text-white text-lg"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white text-lg"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white text-lg"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
